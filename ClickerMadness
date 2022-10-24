@@ -459,7 +459,7 @@ if game.PlaceId == 5490351219 then
         
             --Super Clicker Sim ends here
   -- blox fruit start here
-    elseif Place.Id == 2753915549 then    
+    elseif game.PlaceId == 2753915549 then   
 
     wait(1.2)
 game.StarterGui:SetCore("SendNotification", {
