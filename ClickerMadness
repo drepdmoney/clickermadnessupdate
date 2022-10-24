@@ -456,5 +456,330 @@ if game.PlaceId == 5490351219 then
             MainSection:NewKeybind("Click to Toggle UI", "Right Control", Enum.KeyCode.RightControl, function()
                 Library:ToggleUI()
             end)
-        end
+        
             --Super Clicker Sim ends here
+  -- blox fruit start here
+        elseif Place.Id == 2753915549 then
+
+    wait(1.2)
+game.StarterGui:SetCore("SendNotification", {
+Title = "JOIN"; -- the title (ofc)
+Text = "https://discord.gg/TngrGTXEhB"; -- what the text says (ofc)
+
+Duration = 7; -- how long the notification should in secounds
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Dreps Hub | Blox Fruits", "Ocean")
+
+
+local Main = Window:NewTab("Player")
+
+
+local Teleports = Main:NewSection("Teleports")
+
+Teleports:NewLabel("Script will reset character when you get to location.")
+
+Teleports:NewButton("Sky Island 2", "You may have to click 2-3 times", function()
+    function teleportTO(placeCFrame)  --   
+        local plyr = game.Players.LocalPlayer
+        if plyr.Character then
+         plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(CFrame.new(-4649, 868, -1721)) -- portal coords (works with sky portal and fish portal)
+end)
+
+Teleports:NewButton("Underwater City", "You may have to click 2-3 times", function()
+    function teleportTO(placeCFrame)  --   
+        local plyr = game.Players.LocalPlayer
+        if plyr.Character then
+         plyr.Character.HumanoidRootPart.CFrame = placeCFrame;
+        end
+    end
+    teleportTO(CFrame.new(61170, 1, 1916)) -- portal coords (works with sky portal and fish portal)
+    
+end)
+
+Teleports:NewButton("Jungle", "Tween to jungle", function()
+    local teleport_table = {
+        location1 = Vector3.new(-1250, 12, 341), -- your desired position
+        
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(14,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and 
+        lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            -- a.Completed:Wait()
+            -- print('Teleporting Done!')
+            a.Completed:Wait(0)
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+   
+end)
+
+Teleports:NewButton("Pirate Village", "Tween to Pirate Village", function()
+    local teleport_table = {
+        location1 = Vector3.new(-1122, 5, 3856), -- your desired position
+        
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(15,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and 
+        lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            -- a.Completed:Wait()
+            -- print('Teleporting Done!')
+            a.Completed:Wait(0)
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+end)
+
+Teleports:NewButton("Desert", "Tween to Desert", function()
+    local teleport_table = {
+        location1 = Vector3.new(1094, 7, 4193), -- your desired position
+        
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(16,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and 
+        lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            -- a.Completed:Wait()
+            -- print('Teleporting Done!')
+            a.Completed:Wait(0)
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+end)
+
+Teleports:NewButton("Fountain City", "Tween to Fountain City", function()
+    local teleport_table = {
+        location1 = Vector3.new(5133, 5, 4038), -- your desired position
+        
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(14,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and 
+        lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            -- a.Completed:Wait()
+            -- print('Teleporting Done!')
+            a.Completed:Wait(0)
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+end)
+
+Teleports:NewButton("Marine Starter", "Will set spawn at Pirate island", function()
+    local teleport_table = {
+        location1 = Vector3.new(-2573, 7, 2047), -- your desired position
+      
+    }
+    
+    local tween_s = game:GetService('TweenService')
+    local tweeninfo = TweenInfo.new(14,Enum.EasingStyle.Linear)
+    
+    local lp = game.Players.LocalPlayer
+    
+    function bypass_teleport(v)
+        if lp.Character and 
+        lp.Character:FindFirstChild('HumanoidRootPart') then
+            local cf = CFrame.new(v)
+            local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+            a:Play()
+            -- a.Completed:Wait()
+            -- print('Teleporting Done!')
+            a.Completed:Wait(0)
+            game.Players.LocalPlayer.Character.Humanoid.Health = 0
+        end
+    end
+    
+    bypass_teleport(teleport_table.location1)
+end)
+
+local NewMain = Window:NewTab("Main") -- NewMain is the tab
+
+
+local ESPSection = NewMain:NewSection("ESP")
+
+ESPSection:NewButton("Player ESP", "SOMETIMES you have to be close to players to work", function()
+
+--- Tut
+
+local esp_settings = { ---- table for esp settings 
+textsize = 8,
+colour = 255,255,255
+}
+
+local gui = Instance.new("BillboardGui")
+local esp = Instance.new("TextLabel",gui) ---- new instances to make the billboard gui and the textlabel
+
+
+
+gui.Name = "Cracked esp"; ---- properties of the esp
+gui.ResetOnSpawn = false
+gui.AlwaysOnTop = true;
+gui.LightInfluence = 0;
+gui.Size = UDim2.new(1.75, 0, 1.75, 0);
+esp.BackgroundColor3 = Color3.fromRGB(255, 255, 255);
+esp.Text = ""
+esp.Size = UDim2.new(0.0001, 0.00001, 0.0001, 0.00001);
+esp.BorderSizePixel = 4;
+esp.BorderColor3 = Color3.new(esp_settings.colour)
+esp.BorderSizePixel = 0
+esp.Font = "GothamSemibold"
+esp.TextSize = esp_settings.textsize
+esp.TextColor3 = Color3.fromRGB(esp_settings.colour) -- text colour
+
+game:GetService("RunService").RenderStepped:Connect(function() ---- loops faster than a while loop :)
+for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+    if v ~= game:GetService("Players").LocalPlayer and v.Character.Head:FindFirstChild("Cracked esp")==nil  then -- craeting checks for team check, local player etc
+        esp.Text = "{"..v.Name.."}"
+        gui:Clone().Parent = v.Character.Head
+end
+end
+end)
+
+
+local c = workspace.CurrentCamera
+local ps = game:GetService("Players")
+local lp = ps.LocalPlayer
+local rs = game:GetService("RunService")
+
+local function getdistancefc(part)
+    return (part.Position - c.CFrame.Position).Magnitude
+end
+
+local function esp(p,cr)
+    local h = cr:WaitForChild("Humanoid")
+    local hrp = cr:WaitForChild("HumanoidRootPart")
+
+    local text = Drawing.new("Text")
+    text.Visible = false
+    text.Center = true 
+    text.Outline = true 
+    text.Font = 2
+    text.Color = Color3.fromRGB(255,255,255)
+    text.Size = 13
+
+    local c1 
+    local c2 
+    local c3 
+
+    local function dc()
+        text.Visible = false
+        text:Remove()
+        if c1 then
+            c1:Disconnect()
+            c1 = nil 
+        end
+        if c2 then
+            c2:Disconnect()
+            c2 = nil 
+        end
+        if c3 then
+            c3:Disconnect()
+            c3 = nil 
+        end
+    end
+
+    c2 = cr.AncestryChanged:Connect(function(_,parent)
+        if not parent then
+            dc()
+        end
+    end)
+
+    c3 = h.HealthChanged:Connect(function(v)
+        if (v<=0) or (h:GetState() == Enum.HumanoidStateType.Dead) then
+            dc()
+        end
+    end)
+
+    c1 = rs.RenderStepped:Connect(function()
+        local hrp_pos,hrp_os = c:WorldToViewportPoint(hrp.Position)
+        if hrp_os then
+            text.Position = Vector2.new(hrp_pos.X,hrp_pos.Y)
+            text.Text = p.Name .. ' ('..tostring(math.floor(getdistancefc(hrp)))..' ms)'
+            text.Visible = true 
+        else
+            text.Visible = false 
+        end
+    end)
+end
+
+local function p_added(p)
+    if p.Character then
+        esp(p,p.Character)
+    end
+    p.CharacterAdded:Connect(function(cr)
+        esp(p,cr)
+    end)
+end
+
+
+for i,p in next, ps:GetPlayers() do 
+    if p ~= lp then
+        p_added(p)
+    end
+end
+
+ps.PlayerAdded:Connect(p_added)
+end)
+end
+
+-- blox fruit end here
